@@ -1,0 +1,2598 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat Dec  3 14:42:45 2022
+# Process ID: 2852
+# Current directory: C:/Users/lenovo/Desktop/Exp5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2464 C:\Users\lenovo\Desktop\Exp5\Exp5.xpr
+# Log file: C:/Users/lenovo/Desktop/Exp5/vivado.log
+# Journal file: C:/Users/lenovo/Desktop/Exp5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lenovo/Desktop/Exp5/Exp5.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado2020/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 996.883 ; gain = 0.000
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'divider'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'multiplier'...
+[Sat Dec  3 17:33:18 2022] Launched divider_synth_1, multiplier_synth_1...
+Run output will be captured here:
+divider_synth_1: C:/Users/lenovo/Desktop/Exp5/Exp5.runs/divider_synth_1/runme.log
+multiplier_synth_1: C:/Users/lenovo/Desktop/Exp5/Exp5.runs/multiplier_synth_1/runme.log
+[Sat Dec  3 17:33:18 2022] Launched synth_1...
+Run output will be captured here: C:/Users/lenovo/Desktop/Exp5/Exp5.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 996.883 ; gain = 0.000
+launch_runs impl_1 -jobs 4
+[Sat Dec  3 17:57:39 2022] Launched impl_1...
+Run output will be captured here: C:/Users/lenovo/Desktop/Exp5/Exp5.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec  3 18:00:33 2022] Launched impl_1...
+Run output will be captured here: C:/Users/lenovo/Desktop/Exp5/Exp5.runs/impl_1/runme.log
+add_files -fileset constrs_1 -norecurse C:/Users/lenovo/Desktop/constraint.xdc
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec  3 20:53:29 2022] Launched synth_1...
+Run output will be captured here: C:/Users/lenovo/Desktop/Exp5/Exp5.runs/synth_1/runme.log
+[Sat Dec  3 20:53:30 2022] Launched impl_1...
+Run output will be captured here: C:/Users/lenovo/Desktop/Exp5/Exp5.runs/impl_1/runme.log
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/lenovo/Desktop/Exp5/Exp5.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/vivado2020/Vivado/2020.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/lenovo/Desktop/Exp5/Exp5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'core_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lenovo/Desktop/Exp5/Exp5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj core_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/Exp5.srcs/sources_1/ip/divider/divider_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divider
+INFO: [VRFC 10-311] analyzing module divider_div_gen_v5_1_16
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_10
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_12
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_14
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_16
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_18
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_2
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_20
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_22
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_24
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_26
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_28
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_30
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_32
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_34
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_36
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_38
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_4
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_40
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_42
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_44
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_46
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_48
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_51
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_53
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_55
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_57
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_59
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_6
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_61
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_63
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_8
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v__parameterized0
+INFO: [VRFC 10-311] analyzing module divider_bip_sdivider_synth
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_102
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_107
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_112
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_117
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_122
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_127
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_132
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_137
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_142
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_147
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_152
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_157
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_162
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_167
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_172
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_177
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_182
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_187
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_192
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_197
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_202
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_207
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_212
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_217
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_222
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_72
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_77
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_82
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_87
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_92
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_97
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6__parameterized1
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_101
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_106
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_111
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_116
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_121
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_126
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_131
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_136
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_141
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_146
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_151
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_156
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_161
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_166
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_171
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_176
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_181
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_186
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_191
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_196
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_201
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_206
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_211
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_216
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_221
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_71
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_76
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_81
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_86
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_91
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_96
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv__parameterized0
+INFO: [VRFC 10-311] analyzing module divider_c_twos_comp_viv
+INFO: [VRFC 10-311] analyzing module divider_c_twos_comp_viv__parameterized0
+INFO: [VRFC 10-311] analyzing module divider_c_twos_comp_viv__parameterized1
+INFO: [VRFC 10-311] analyzing module divider_c_twos_comp_viv__parameterized1_1
+INFO: [VRFC 10-311] analyzing module divider_cmp2s_v
+INFO: [VRFC 10-311] analyzing module divider_cmp2s_v__parameterized0
+INFO: [VRFC 10-311] analyzing module divider_cmp2s_v__parameterized1
+INFO: [VRFC 10-311] analyzing module divider_cmp2s_v__parameterized1_0
+INFO: [VRFC 10-311] analyzing module divider_div_gen_synth
+INFO: [VRFC 10-311] analyzing module divider_div_gen_v5_1_16_viv
+INFO: [VRFC 10-311] analyzing module divider_dividervdc_v
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized1
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized101
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized103
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized105
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized107
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized109
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized11
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized111
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized113
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized115
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized117
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized119
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized121
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized123
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized125
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized127
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized129
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized13
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized132
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized134
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized15
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized17
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized19
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized21
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized23
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized25
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized27
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized29
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized3
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized31
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized33
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized35
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized37
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized39
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized3_66
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized41
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized43
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized45
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized47
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized49
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized51
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized53
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized55
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized57
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized59
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_11
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_13
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_15
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_17
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_19
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_21
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_23
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_25
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_27
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_29
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_3
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_31
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_33
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_35
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_37
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_39
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_41
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_43
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_45
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_47
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_49
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_5
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_52
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_54
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_56
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_58
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_60
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_62
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_64
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_65
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_7
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_9
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized61
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized63
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized65
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized67
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized69
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized71
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized73
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized75
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized77
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized79
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_100
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_103
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_105
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_108
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_110
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_113
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_115
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_118
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_120
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_123
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_125
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_128
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_130
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_133
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_135
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_138
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_140
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_143
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_145
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_148
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_150
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_153
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_155
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_158
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_160
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_163
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_165
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_168
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_170
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_173
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_175
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_178
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_180
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_183
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_185
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_188
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_190
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_193
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_195
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_198
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_200
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_203
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_205
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_208
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_210
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_213
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_215
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_218
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_220
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_223
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_225
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_50
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_67
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_68
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_69
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_70
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_73
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_75
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_78
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_80
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_83
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_85
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_88
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_90
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_93
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_95
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_98
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized81
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized83
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized85
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized87
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized89
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized91
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized93
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized95
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized97
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized99
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_104
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_109
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_114
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_119
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_124
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_129
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_134
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_139
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_144
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_149
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_154
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_159
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_164
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_169
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_174
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_179
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_184
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_189
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_194
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_199
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_204
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_209
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_214
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_219
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_224
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_74
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_79
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_84
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_89
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_94
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_99
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/Exp5.srcs/sources_1/ip/multiplier/multiplier_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplier
+INFO: [VRFC 10-311] analyzing module multiplier_mult_gen_v12_0_16
+INFO: [VRFC 10-311] analyzing module multiplier_luts
+INFO: [VRFC 10-311] analyzing module multiplier_mult_gen_v12_0_16_viv
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/core/CtrlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CtrlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/core/FU_ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FU_ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/core/FU_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FU_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/core/FU_jump.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FU_jump
+INFO: [VRFC 10-2458] undeclared symbol c, assumed default net type wire [C:/Users/lenovo/Desktop/Exp5/code/core/FU_jump.v:82]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/core/FU_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FU_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/core/FU_mul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FU_mul
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/core/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/common/MUX2T1_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2T1_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/common/MUX8T1_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX8T1_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/core/RAM_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/common/REG32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/core/REG_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/core/ROM_D.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_D
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/core/RV32core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RV32core
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/core/Regs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regs
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/common/add_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/auxillary/debug_clk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debug_clk
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/sim/core_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module core_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/Exp5.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'glbl' [C:/Users/lenovo/Desktop/Exp5/Exp5.sim/sim_1/behav/xsim/glbl.v:6]
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:22 . Memory (MB): peak = 1183.270 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '23' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lenovo/Desktop/Exp5/Exp5.sim/sim_1/behav/xsim'
+"xelab -wto ee483bd22de04824896a12873b7858bd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot core_sim_behav xil_defaultlib.core_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto ee483bd22de04824896a12873b7858bd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot core_sim_behav xil_defaultlib.core_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.debug_clk
+Compiling module xil_defaultlib.REG32
+Compiling module xil_defaultlib.add_32
+Compiling module xil_defaultlib.MUX2T1_32
+Compiling module xil_defaultlib.ROM_D
+Compiling module xil_defaultlib.REG_ID
+Compiling module xil_defaultlib.CtrlUnit
+Compiling module xil_defaultlib.ImmGen
+Compiling module xil_defaultlib.Regs
+Compiling module xil_defaultlib.FU_ALU
+Compiling module xil_defaultlib.RAM_B
+Compiling module xil_defaultlib.FU_mem
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module xil_defaultlib.multiplier_mult_gen_v12_0_16
+Compiling module xil_defaultlib.multiplier
+Compiling module xil_defaultlib.FU_mul
+Compiling module unisims_ver.VCC
+Compiling module unisims_ver.SRLC32E_default
+Compiling module unisims_ver.FDRE(INIT=1'b1)
+Compiling module xil_defaultlib.divider_div_gen_v5_1_16
+Compiling module xil_defaultlib.divider
+Compiling module xil_defaultlib.FU_div
+Compiling module xil_defaultlib.FU_jump
+Compiling module xil_defaultlib.MUX8T1_32
+Compiling module xil_defaultlib.RV32core
+Compiling module xil_defaultlib.core_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot core_sim_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/lenovo/Desktop/Exp5/Exp5.sim/sim_1/behav/xsim/xsim.dir/core_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/lenovo/Desktop/Exp5/Exp5.sim/sim_1/behav/xsim/xsim.dir/core_sim_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sat Dec  3 21:07:41 2022. For additional details about this file, please refer to the WebTalk help file at D:/vivado2020/Vivado/2020.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sat Dec  3 21:07:41 2022...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:44 . Memory (MB): peak = 1183.270 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '44' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/lenovo/Desktop/Exp5/Exp5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "core_sim_behav -key {Behavioral:sim_1:Functional:core_sim} -tclbatch {core_sim.tcl} -view {C:/Users/lenovo/Desktop/Exp5/code/sim/core_sim_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config C:/Users/lenovo/Desktop/Exp5/code/sim/core_sim_behav.wcfg
+source core_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1201.848 ; gain = 18.578
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'core_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:01:30 . Memory (MB): peak = 1201.848 ; gain = 18.578
+run 300 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 300 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1201.848 ; gain = 0.000
+close_project
+open_project D:/atom/CA/CALab/Exp5/Exp5.xpr
+INFO: [Project 1-313] Project file moved from 'E:/Archi/Exp5' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado2020/Vivado/2020.1/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/atom/CA/CALab/Exp5/Exp5.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/vivado2020/Vivado/2020.1/data/xsim/xsim.ini' copied to run dir:'D:/atom/CA/CALab/Exp5/Exp5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'core_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/atom/CA/CALab/Exp5/Exp5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj core_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/atom/CA/CALab/Exp5/code/core/CtrlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CtrlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/atom/CA/CALab/Exp5/code/core/FU_ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FU_ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/atom/CA/CALab/Exp5/code/core/FU_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FU_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/atom/CA/CALab/Exp5/code/core/FU_jump.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FU_jump
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/atom/CA/CALab/Exp5/code/core/FU_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FU_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/atom/CA/CALab/Exp5/code/core/FU_mul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FU_mul
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/atom/CA/CALab/Exp5/code/core/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/atom/CA/CALab/Exp5/code/common/MUX2T1_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2T1_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/atom/CA/CALab/Exp5/code/common/MUX8T1_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX8T1_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/atom/CA/CALab/Exp5/code/core/RAM_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/atom/CA/CALab/Exp5/code/common/REG32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/atom/CA/CALab/Exp5/code/core/REG_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/atom/CA/CALab/Exp5/code/core/ROM_D.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_D
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/atom/CA/CALab/Exp5/code/core/RV32core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RV32core
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/atom/CA/CALab/Exp5/code/core/Regs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regs
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/atom/CA/CALab/Exp5/code/common/add_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/atom/CA/CALab/Exp5/code/auxillary/debug_clk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debug_clk
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/atom/CA/CALab/Exp5/code/sim/core_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module core_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/atom/CA/CALab/Exp5/Exp5.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj core_sim_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/atom/CA/CALab/Exp5/Exp5.srcs/sources_1/ip/divider/sim/divider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'divider'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/atom/CA/CALab/Exp5/Exp5.srcs/sources_1/ip/multiplier/sim/multiplier.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'multiplier'
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1201.848 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/atom/CA/CALab/Exp5/Exp5.sim/sim_1/behav/xsim'
+"xelab -wto ee483bd22de04824896a12873b7858bd --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_16 -L floating_point_v7_0_17 -L xbip_dsp48_mult_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L div_gen_v5_1_16 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot core_sim_behav xil_defaultlib.core_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto ee483bd22de04824896a12873b7858bd --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_16 -L floating_point_v7_0_17 -L xbip_dsp48_mult_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L div_gen_v5_1_16 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot core_sim_behav xil_defaultlib.core_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package mult_gen_v12_0_16.mult_gen_v12_0_16_viv_comp
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package mult_gen_v12_0_16.mult_gen_v12_0_16_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package unisim.vcomponents
+Compiling package mult_gen_v12_0_16.dsp_pkg
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package div_gen_v5_1_16.div_gen_v5_1_16_viv_comp
+Compiling package xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv_comp
+Compiling package axi_utils_v2_0_6.axi_utils_v2_0_6_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_6.global_util_pkg
+Compiling package axi_utils_v2_0_6.axi_utils_comps
+Compiling package ieee.std_logic_unsigned
+Compiling package xbip_bram18k_v3_0_6.xbip_bram18k_v3_0_6_pkg
+Compiling package div_gen_v5_1_16.div_gen_pkg
+Compiling package div_gen_v5_1_16.pkg_addsub
+Compiling module xil_defaultlib.debug_clk
+Compiling module xil_defaultlib.REG32
+Compiling module xil_defaultlib.add_32
+Compiling module xil_defaultlib.MUX2T1_32
+Compiling module xil_defaultlib.ROM_D
+Compiling module xil_defaultlib.REG_ID
+Compiling module xil_defaultlib.CtrlUnit
+Compiling module xil_defaultlib.ImmGen
+Compiling module xil_defaultlib.Regs
+Compiling module xil_defaultlib.FU_ALU
+Compiling module xil_defaultlib.RAM_B
+Compiling module xil_defaultlib.FU_mem
+Compiling architecture xilinx of entity mult_gen_v12_0_16.delay_line [\delay_line(c_xdevicefamily="kin...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.delay_line [\delay_line(c_xdevicefamily="kin...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.delay_line [\delay_line(c_xdevicefamily="kin...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(0,15)\]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.delay_line [\delay_line(c_xdevicefamily="kin...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.delay_line [\delay_line(c_xdevicefamily="kin...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(alumodereg=0,carryinreg...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.delay_line [\delay_line(c_xdevicefamily="kin...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.delay_line [\delay_line(c_xdevicefamily="kin...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(a_input="CASCADE",bcasc...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=2,areg=2,bcasc...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.delay_line [\delay_line(c_xdevicefamily="kin...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=2,areg=2,a_inp...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.delay_line [\delay_line(c_xdevicefamily="kin...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.op_resize [\op_resize(ai_width=32,bi_width=...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.dsp [\dsp(c_xdevicefamily="kintex7",c...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.mult_gen_v12_0_16_viv [\mult_gen_v12_0_16_viv(c_verbosi...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.mult_gen_v12_0_16 [\mult_gen_v12_0_16(c_xdevicefami...]
+Compiling architecture multiplier_arch of entity xil_defaultlib.multiplier [multiplier_default]
+Compiling module xil_defaultlib.FU_mul
+Compiling architecture synth of entity div_gen_v5_1_16.c_twos_comp_viv [\c_twos_comp_viv(c_width=32,c_ai...]
+Compiling architecture virtex of entity div_gen_v5_1_16.cmp2s_v [\cmp2s_v(c_bus_width=32,c_regist...]
+Compiling architecture synth of entity div_gen_v5_1_16.c_twos_comp_viv [\c_twos_comp_viv(c_width=32,c_ai...]
+Compiling architecture virtex of entity div_gen_v5_1_16.cmp2s_v [\cmp2s_v(c_bus_width=32,c_ainit_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture rtl of entity div_gen_v5_1_16.c_addsub_lut6 [\c_addsub_lut6(c_width=33,c_add_...]
+Compiling architecture synth of entity div_gen_v5_1_16.c_addsub_viv [\c_addsub_viv(c_a_width=33,c_b_w...]
+Compiling architecture virtex of entity div_gen_v5_1_16.addsubreg_v [\addsubreg_v(c_bus_width=33,c_ai...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity div_gen_v5_1_16.c_addsub_lut6 [\c_addsub_lut6(c_width=33,c_add_...]
+Compiling architecture synth of entity div_gen_v5_1_16.c_addsub_viv [\c_addsub_viv(c_a_width=33,c_b_w...]
+Compiling architecture virtex of entity div_gen_v5_1_16.addsubreg_v [\addsubreg_v(c_bus_width=33,c_ha...]
+Compiling architecture virtex of entity div_gen_v5_1_16.dividervdc_v [\dividervdc_v(bus_num=32,bus_div...]
+Compiling architecture synth of entity div_gen_v5_1_16.c_twos_comp_viv [\c_twos_comp_viv(c_width=33,c_ai...]
+Compiling architecture virtex of entity div_gen_v5_1_16.cmp2s_v [\cmp2s_v(c_bus_width=33,c_regist...]
+Compiling architecture synth of entity div_gen_v5_1_16.bip_sdivider_synth [\bip_sdivider_synth(c_xdevicefam...]
+Compiling architecture synth of entity div_gen_v5_1_16.div_gen_synth [\div_gen_synth(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity div_gen_v5_1_16.div_gen_v5_1_16_viv [\div_gen_v5_1_16_viv(c_xdevicefa...]
+Compiling architecture xilinx of entity div_gen_v5_1_16.div_gen_v5_1_16 [\div_gen_v5_1_16(c_xdevicefamily...]
+Compiling architecture divider_arch of entity xil_defaultlib.divider [divider_default]
+Compiling module xil_defaultlib.FU_div
+Compiling module xil_defaultlib.FU_jump
+Compiling module xil_defaultlib.MUX8T1_32
+Compiling module xil_defaultlib.RV32core
+Compiling module xil_defaultlib.core_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot core_sim_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source D:/atom/CA/CALab/Exp5/Exp5.sim/sim_1/behav/xsim/xsim.dir/core_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'D:/atom/CA/CALab/Exp5/Exp5.sim/sim_1/behav/xsim/xsim.dir/core_sim_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sat Dec  3 21:14:17 2022. For additional details about this file, please refer to the WebTalk help file at D:/vivado2020/Vivado/2020.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sat Dec  3 21:14:17 2022...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:24 . Memory (MB): peak = 1201.848 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '24' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/atom/CA/CALab/Exp5/Exp5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "core_sim_behav -key {Behavioral:sim_1:Functional:core_sim} -tclbatch {core_sim.tcl} -view {D:/atom/CA/CALab/Exp5/code/sim/core_sim_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config D:/atom/CA/CALab/Exp5/code/sim/core_sim_behav.wcfg
+source core_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'core_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:34 . Memory (MB): peak = 1201.848 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 300 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1231.141 ; gain = 0.000
+close_project
+open_project C:/Users/lenovo/Desktop/Exp5/Exp5.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado2020/Vivado/2020.1/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/lenovo/Desktop/Exp5/Exp5.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/vivado2020/Vivado/2020.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/lenovo/Desktop/Exp5/Exp5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'core_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lenovo/Desktop/Exp5/Exp5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj core_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/Exp5.srcs/sources_1/ip/divider/divider_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divider
+INFO: [VRFC 10-311] analyzing module divider_div_gen_v5_1_16
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_10
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_12
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_14
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_16
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_18
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_2
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_20
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_22
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_24
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_26
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_28
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_30
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_32
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_34
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_36
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_38
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_4
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_40
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_42
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_44
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_46
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_48
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_51
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_53
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_55
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_57
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_59
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_6
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_61
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_63
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_8
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v__parameterized0
+INFO: [VRFC 10-311] analyzing module divider_bip_sdivider_synth
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_102
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_107
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_112
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_117
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_122
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_127
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_132
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_137
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_142
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_147
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_152
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_157
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_162
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_167
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_172
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_177
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_182
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_187
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_192
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_197
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_202
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_207
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_212
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_217
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_222
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_72
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_77
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_82
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_87
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_92
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_97
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6__parameterized1
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_101
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_106
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_111
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_116
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_121
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_126
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_131
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_136
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_141
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_146
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_151
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_156
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_161
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_166
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_171
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_176
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_181
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_186
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_191
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_196
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_201
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_206
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_211
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_216
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_221
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_71
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_76
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_81
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_86
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_91
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_96
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv__parameterized0
+INFO: [VRFC 10-311] analyzing module divider_c_twos_comp_viv
+INFO: [VRFC 10-311] analyzing module divider_c_twos_comp_viv__parameterized0
+INFO: [VRFC 10-311] analyzing module divider_c_twos_comp_viv__parameterized1
+INFO: [VRFC 10-311] analyzing module divider_c_twos_comp_viv__parameterized1_1
+INFO: [VRFC 10-311] analyzing module divider_cmp2s_v
+INFO: [VRFC 10-311] analyzing module divider_cmp2s_v__parameterized0
+INFO: [VRFC 10-311] analyzing module divider_cmp2s_v__parameterized1
+INFO: [VRFC 10-311] analyzing module divider_cmp2s_v__parameterized1_0
+INFO: [VRFC 10-311] analyzing module divider_div_gen_synth
+INFO: [VRFC 10-311] analyzing module divider_div_gen_v5_1_16_viv
+INFO: [VRFC 10-311] analyzing module divider_dividervdc_v
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized1
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized101
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized103
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized105
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized107
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized109
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized11
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized111
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized113
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized115
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized117
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized119
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized121
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized123
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized125
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized127
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized129
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized13
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized132
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized134
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized15
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized17
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized19
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized21
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized23
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized25
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized27
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized29
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized3
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized31
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized33
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized35
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized37
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized39
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized3_66
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized41
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized43
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized45
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized47
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized49
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized51
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized53
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized55
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized57
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized59
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_11
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_13
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_15
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_17
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_19
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_21
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_23
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_25
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_27
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_29
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_3
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_31
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_33
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_35
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_37
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_39
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_41
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_43
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_45
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_47
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_49
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_5
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_52
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_54
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_56
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_58
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_60
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_62
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_64
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_65
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_7
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_9
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized61
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized63
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized65
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized67
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized69
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized71
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized73
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized75
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized77
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized79
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_100
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_103
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_105
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_108
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_110
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_113
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_115
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_118
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_120
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_123
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_125
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_128
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_130
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_133
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_135
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_138
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_140
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_143
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_145
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_148
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_150
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_153
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_155
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_158
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_160
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_163
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_165
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_168
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_170
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_173
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_175
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_178
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_180
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_183
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_185
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_188
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_190
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_193
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_195
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_198
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_200
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_203
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_205
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_208
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_210
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_213
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_215
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_218
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_220
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_223
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_225
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_50
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_67
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_68
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_69
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_70
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_73
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_75
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_78
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_80
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_83
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_85
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_88
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_90
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_93
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_95
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_98
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized81
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized83
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized85
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized87
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized89
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized91
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized93
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized95
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized97
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized99
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_104
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_109
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_114
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_119
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_124
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_129
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_134
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_139
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_144
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_149
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_154
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_159
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_164
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_169
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_174
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_179
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_184
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_189
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_194
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_199
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_204
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_209
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_214
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_219
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_224
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_74
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_79
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_84
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_89
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_94
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_99
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/Exp5.srcs/sources_1/ip/multiplier/multiplier_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplier
+INFO: [VRFC 10-311] analyzing module multiplier_mult_gen_v12_0_16
+INFO: [VRFC 10-311] analyzing module multiplier_luts
+INFO: [VRFC 10-311] analyzing module multiplier_mult_gen_v12_0_16_viv
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/core/CtrlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CtrlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/core/FU_ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FU_ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/core/FU_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FU_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/core/FU_jump.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FU_jump
+INFO: [VRFC 10-2458] undeclared symbol c, assumed default net type wire [C:/Users/lenovo/Desktop/Exp5/code/core/FU_jump.v:82]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/core/FU_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FU_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/core/FU_mul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FU_mul
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/core/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/common/MUX2T1_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2T1_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/common/MUX8T1_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX8T1_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/core/RAM_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/common/REG32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/core/REG_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/core/ROM_D.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_D
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/core/RV32core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RV32core
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/core/Regs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regs
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/common/add_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/auxillary/debug_clk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debug_clk
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/sim/core_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module core_sim
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 1425.684 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '17' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lenovo/Desktop/Exp5/Exp5.sim/sim_1/behav/xsim'
+"xelab -wto ee483bd22de04824896a12873b7858bd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot core_sim_behav xil_defaultlib.core_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto ee483bd22de04824896a12873b7858bd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot core_sim_behav xil_defaultlib.core_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.debug_clk
+Compiling module xil_defaultlib.REG32
+Compiling module xil_defaultlib.add_32
+Compiling module xil_defaultlib.MUX2T1_32
+Compiling module xil_defaultlib.ROM_D
+Compiling module xil_defaultlib.REG_ID
+Compiling module xil_defaultlib.CtrlUnit
+Compiling module xil_defaultlib.ImmGen
+Compiling module xil_defaultlib.Regs
+Compiling module xil_defaultlib.FU_ALU
+Compiling module xil_defaultlib.RAM_B
+Compiling module xil_defaultlib.FU_mem
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module xil_defaultlib.multiplier_mult_gen_v12_0_16
+Compiling module xil_defaultlib.multiplier
+Compiling module xil_defaultlib.FU_mul
+Compiling module unisims_ver.VCC
+Compiling module unisims_ver.SRLC32E_default
+Compiling module unisims_ver.FDRE(INIT=1'b1)
+Compiling module xil_defaultlib.divider_div_gen_v5_1_16
+Compiling module xil_defaultlib.divider
+Compiling module xil_defaultlib.FU_div
+Compiling module xil_defaultlib.FU_jump
+Compiling module xil_defaultlib.MUX8T1_32
+Compiling module xil_defaultlib.RV32core
+Compiling module xil_defaultlib.core_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot core_sim_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:30 . Memory (MB): peak = 1425.684 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '30' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/lenovo/Desktop/Exp5/Exp5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "core_sim_behav -key {Behavioral:sim_1:Functional:core_sim} -tclbatch {core_sim.tcl} -view {C:/Users/lenovo/Desktop/Exp5/code/sim/core_sim_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config C:/Users/lenovo/Desktop/Exp5/code/sim/core_sim_behav.wcfg
+source core_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1425.684 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'core_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:52 . Memory (MB): peak = 1425.684 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 300 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+open_project D:/atom/CA/CALab/Exp5/Exp5.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado2020/Vivado/2020.1/data/ip'.
+update_compile_order -fileset sources_1
+close_project
+open_project C:/Users/lenovo/Desktop/Exp5/Exp5.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado2020/Vivado/2020.1/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/lenovo/Desktop/Exp5/Exp5.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/vivado2020/Vivado/2020.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/lenovo/Desktop/Exp5/Exp5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'core_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lenovo/Desktop/Exp5/Exp5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj core_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/Exp5.srcs/sources_1/ip/divider/divider_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divider
+INFO: [VRFC 10-311] analyzing module divider_div_gen_v5_1_16
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_10
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_12
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_14
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_16
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_18
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_2
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_20
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_22
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_24
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_26
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_28
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_30
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_32
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_34
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_36
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_38
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_4
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_40
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_42
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_44
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_46
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_48
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_51
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_53
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_55
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_57
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_59
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_6
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_61
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_63
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v_8
+INFO: [VRFC 10-311] analyzing module divider_addsubreg_v__parameterized0
+INFO: [VRFC 10-311] analyzing module divider_bip_sdivider_synth
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_102
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_107
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_112
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_117
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_122
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_127
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_132
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_137
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_142
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_147
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_152
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_157
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_162
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_167
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_172
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_177
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_182
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_187
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_192
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_197
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_202
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_207
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_212
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_217
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_222
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_72
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_77
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_82
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_87
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_92
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6_97
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_lut6__parameterized1
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_101
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_106
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_111
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_116
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_121
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_126
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_131
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_136
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_141
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_146
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_151
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_156
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_161
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_166
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_171
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_176
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_181
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_186
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_191
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_196
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_201
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_206
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_211
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_216
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_221
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_71
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_76
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_81
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_86
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_91
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv_96
+INFO: [VRFC 10-311] analyzing module divider_c_addsub_viv__parameterized0
+INFO: [VRFC 10-311] analyzing module divider_c_twos_comp_viv
+INFO: [VRFC 10-311] analyzing module divider_c_twos_comp_viv__parameterized0
+INFO: [VRFC 10-311] analyzing module divider_c_twos_comp_viv__parameterized1
+INFO: [VRFC 10-311] analyzing module divider_c_twos_comp_viv__parameterized1_1
+INFO: [VRFC 10-311] analyzing module divider_cmp2s_v
+INFO: [VRFC 10-311] analyzing module divider_cmp2s_v__parameterized0
+INFO: [VRFC 10-311] analyzing module divider_cmp2s_v__parameterized1
+INFO: [VRFC 10-311] analyzing module divider_cmp2s_v__parameterized1_0
+INFO: [VRFC 10-311] analyzing module divider_div_gen_synth
+INFO: [VRFC 10-311] analyzing module divider_div_gen_v5_1_16_viv
+INFO: [VRFC 10-311] analyzing module divider_dividervdc_v
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized1
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized101
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized103
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized105
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized107
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized109
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized11
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized111
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized113
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized115
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized117
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized119
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized121
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized123
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized125
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized127
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized129
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized13
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized132
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized134
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized15
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized17
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized19
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized21
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized23
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized25
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized27
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized29
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized3
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized31
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized33
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized35
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized37
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized39
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized3_66
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized41
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized43
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized45
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized47
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized49
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized51
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized53
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized55
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized57
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized59
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_11
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_13
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_15
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_17
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_19
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_21
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_23
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_25
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_27
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_29
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_3
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_31
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_33
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_35
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_37
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_39
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_41
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_43
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_45
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_47
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_49
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_5
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_52
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_54
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_56
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_58
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_60
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_62
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_64
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_65
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_7
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized5_9
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized61
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized63
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized65
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized67
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized69
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized71
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized73
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized75
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized77
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized79
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_100
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_103
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_105
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_108
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_110
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_113
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_115
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_118
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_120
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_123
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_125
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_128
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_130
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_133
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_135
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_138
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_140
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_143
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_145
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_148
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_150
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_153
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_155
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_158
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_160
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_163
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_165
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_168
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_170
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_173
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_175
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_178
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_180
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_183
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_185
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_188
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_190
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_193
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_195
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_198
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_200
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_203
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_205
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_208
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_210
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_213
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_215
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_218
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_220
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_223
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_225
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_50
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_67
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_68
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_69
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_70
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_73
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_75
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_78
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_80
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_83
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_85
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_88
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_90
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_93
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_95
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized7_98
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized81
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized83
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized85
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized87
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized89
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized91
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized93
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized95
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized97
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized99
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_104
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_109
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_114
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_119
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_124
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_129
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_134
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_139
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_144
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_149
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_154
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_159
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_164
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_169
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_174
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_179
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_184
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_189
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_194
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_199
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_204
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_209
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_214
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_219
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_224
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_74
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_79
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_84
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_89
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_94
+INFO: [VRFC 10-311] analyzing module divider_xbip_pipe_v3_0_6_viv__parameterized9_99
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/Exp5.srcs/sources_1/ip/multiplier/multiplier_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplier
+INFO: [VRFC 10-311] analyzing module multiplier_mult_gen_v12_0_16
+INFO: [VRFC 10-311] analyzing module multiplier_luts
+INFO: [VRFC 10-311] analyzing module multiplier_mult_gen_v12_0_16_viv
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/core/CtrlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CtrlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/core/FU_ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FU_ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/core/FU_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FU_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/core/FU_jump.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FU_jump
+INFO: [VRFC 10-2458] undeclared symbol c, assumed default net type wire [C:/Users/lenovo/Desktop/Exp5/code/core/FU_jump.v:82]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/core/FU_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FU_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/core/FU_mul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FU_mul
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/core/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/common/MUX2T1_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2T1_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/common/MUX8T1_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX8T1_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/core/RAM_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/common/REG32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/core/REG_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/core/ROM_D.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_D
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/core/RV32core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RV32core
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/core/Regs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regs
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/common/add_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/auxillary/debug_clk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debug_clk
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/code/sim/core_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module core_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/Exp5/Exp5.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'glbl' [C:/Users/lenovo/Desktop/Exp5/Exp5.sim/sim_1/behav/xsim/glbl.v:6]
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 1425.684 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '15' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lenovo/Desktop/Exp5/Exp5.sim/sim_1/behav/xsim'
+"xelab -wto ee483bd22de04824896a12873b7858bd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot core_sim_behav xil_defaultlib.core_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto ee483bd22de04824896a12873b7858bd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot core_sim_behav xil_defaultlib.core_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.debug_clk
+Compiling module xil_defaultlib.REG32
+Compiling module xil_defaultlib.add_32
+Compiling module xil_defaultlib.MUX2T1_32
+Compiling module xil_defaultlib.ROM_D
+Compiling module xil_defaultlib.REG_ID
+Compiling module xil_defaultlib.CtrlUnit
+Compiling module xil_defaultlib.ImmGen
+Compiling module xil_defaultlib.Regs
+Compiling module xil_defaultlib.FU_ALU
+Compiling module xil_defaultlib.RAM_B
+Compiling module xil_defaultlib.FU_mem
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module xil_defaultlib.multiplier_mult_gen_v12_0_16
+Compiling module xil_defaultlib.multiplier
+Compiling module xil_defaultlib.FU_mul
+Compiling module unisims_ver.VCC
+Compiling module unisims_ver.SRLC32E_default
+Compiling module unisims_ver.FDRE(INIT=1'b1)
+Compiling module xil_defaultlib.divider_div_gen_v5_1_16
+Compiling module xil_defaultlib.divider
+Compiling module xil_defaultlib.FU_div
+Compiling module xil_defaultlib.FU_jump
+Compiling module xil_defaultlib.MUX8T1_32
+Compiling module xil_defaultlib.RV32core
+Compiling module xil_defaultlib.core_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot core_sim_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:30 . Memory (MB): peak = 1425.684 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '30' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/lenovo/Desktop/Exp5/Exp5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "core_sim_behav -key {Behavioral:sim_1:Functional:core_sim} -tclbatch {core_sim.tcl} -view {C:/Users/lenovo/Desktop/Exp5/code/sim/core_sim_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config C:/Users/lenovo/Desktop/Exp5/code/sim/core_sim_behav.wcfg
+source core_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1425.684 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'core_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:51 . Memory (MB): peak = 1425.684 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 300 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+open_project D:/atom/CA/CALab/Exp5/Exp5.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado2020/Vivado/2020.1/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/atom/CA/CALab/Exp5/Exp5.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/vivado2020/Vivado/2020.1/data/xsim/xsim.ini' copied to run dir:'D:/atom/CA/CALab/Exp5/Exp5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'core_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/atom/CA/CALab/Exp5/Exp5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj core_sim_vlog.prj"
+"xvhdl --incr --relax -prj core_sim_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/atom/CA/CALab/Exp5/Exp5.sim/sim_1/behav/xsim'
+"xelab -wto ee483bd22de04824896a12873b7858bd --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_16 -L floating_point_v7_0_17 -L xbip_dsp48_mult_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L div_gen_v5_1_16 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot core_sim_behav xil_defaultlib.core_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto ee483bd22de04824896a12873b7858bd --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_16 -L floating_point_v7_0_17 -L xbip_dsp48_mult_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L div_gen_v5_1_16 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot core_sim_behav xil_defaultlib.core_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/atom/CA/CALab/Exp5/Exp5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "core_sim_behav -key {Behavioral:sim_1:Functional:core_sim} -tclbatch {core_sim.tcl} -view {D:/atom/CA/CALab/Exp5/code/sim/core_sim_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config D:/atom/CA/CALab/Exp5/code/sim/core_sim_behav.wcfg
+source core_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'core_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1425.684 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+open_project C:/Users/lenovo/Desktop/CA/lab5/Project/Exp5.xpr
+INFO: [Project 1-313] Project file moved from 'D:/study/CA_Lab/Exp5' since last save.
+Scanning sources...
+Finished scanning sources
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorGccInstallDirModelSim has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorGccInstallDirQuesta has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorGccInstallDirIES has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorGccInstallDirXcelium has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorGccInstallDirVCS has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorGccInstallDirRiviera has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorGccInstallDirActiveHdl has no valid value
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: see 'xilinx:componentInstanceExtensions' : Bad end of element
+CRITICAL WARNING: [IP_Flow 19-5097] Unable to determine VLNV from IP file; verify it has the correct syntax: C:/Users/lenovo/Desktop/CA/lab5/Project/Exp5.srcs/sources_1/ip/divider/divider.xci
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: see 'xilinx:componentInstanceExtensions' : Bad end of element
+CRITICAL WARNING: [IP_Flow 19-5097] Unable to determine VLNV from IP file; verify it has the correct syntax: C:/Users/lenovo/Desktop/CA/lab5/Project/Exp5.srcs/sources_1/ip/multiplier/multiplier.xci
+WARNING: [Project 1-231] Project 'Exp5.xpr' was created with a future version and may or may not perform reliably with this version of Vivado. It has been opened in read-only mode for the protection of unrecognized data. Use 'File | Save Project As...' if you wish to alter a copy of the project.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado2020/Vivado/2020.1/data/ip'.
+update_compile_order -fileset sources_1
+save_project_as project_1 C:/Users/lenovo/Desktop/CA/lab5/Project/project_1 -force
+save_project_as: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1425.684 ; gain = 0.000
+close_project
+open_project {C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/Exp5.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/Zonghui Wang/Desktop/risc v/Code4Stu/Exp5' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado2020/Vivado/2020.1/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'multiplier' is locked:
+* IP definition 'Multiplier (12.0)' for IP 'multiplier' (customized with software release 2018.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'divider' is locked:
+* IP definition 'Divider Generator (5.1)' for IP 'divider' (customized with software release 2018.2) has a different revision in the IP Catalog.
+INFO: [Project 1-230] Project 'Exp5.xpr' upgraded for this version of Vivado.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/Exp5.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/vivado2020/Vivado/2020.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/Exp5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-20] The project contains locked or custom IPs. The pre-compiled version of these IPs will not be referenced and the sources from these IP libraries will be compiled locally.
+INFO: [SIM-utils-54] Inspecting design source files for 'core_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/Exp5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj core_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/core/CtrlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CtrlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/core/FU_ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FU_ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/core/FU_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FU_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/core/FU_jump.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FU_jump
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/core/FU_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FU_mem
+INFO: [VRFC 10-2458] undeclared symbol addr, assumed default net type wire [C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/core/FU_mem.v:49]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/core/FU_mul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FU_mul
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/core/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/common/MUX2T1_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2T1_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/common/MUX8T1_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX8T1_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/core/RAM_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/common/REG32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/core/REG_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/core/ROM_D.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_D
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/core/RV32core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RV32core
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/core/Regs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regs
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/common/add_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/common/cmp_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cmp_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/auxillary/debug_clk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debug_clk
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/sim/core_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module core_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/Exp5.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj core_sim_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/Exp5.ip_user_files/ipstatic/hdl/xbip_utils_v3_0_vh_rfs.vhd" into library xbip_utils_v3_0_9
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/Exp5.ip_user_files/ipstatic/hdl/axi_utils_v2_0_vh_rfs.vhd" into library axi_utils_v2_0_5
+INFO: [VRFC 10-3107] analyzing entity 'glb_srl_fifo'
+INFO: [VRFC 10-3107] analyzing entity 'glb_ifx_slave'
+INFO: [VRFC 10-3107] analyzing entity 'glb_ifx_master'
+INFO: [VRFC 10-3107] analyzing entity 'axi_slave_2to1'
+INFO: [VRFC 10-3107] analyzing entity 'axi_slave_3to1'
+INFO: [VRFC 10-3107] analyzing entity 'axi_slave_4to1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/Exp5.ip_user_files/ipstatic/hdl/xbip_pipe_v3_0_vh_rfs.vhd" into library xbip_pipe_v3_0_5
+INFO: [VRFC 10-3107] analyzing entity 'xbip_pipe_v3_0_5_viv'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_pipe_v3_0_5'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/Exp5.ip_user_files/ipstatic/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" into library xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48a_wrapper_v3_0'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48a1_wrapper_v3_0'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48e_wrapper_v3_0'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48e1_wrapper_v3_0'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48e2_wrapper_v3_0'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48_wrapper_v3_0_4'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/Exp5.ip_user_files/ipstatic/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" into library xbip_dsp48_addsub_v3_0_5
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48_addsub_rtl'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48_addsub_synth'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48_addsub_v3_0_5_viv'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48_addsub_v3_0_5'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/Exp5.ip_user_files/ipstatic/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" into library xbip_bram18k_v3_0_5
+INFO: [VRFC 10-3107] analyzing entity 'xbip_bram18k_synth'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_bram18k_rtl'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_bram18k_v3_0_5_viv'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_bram18k_v3_0_5'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/Exp5.ip_user_files/ipstatic/hdl/mult_gen_v12_0_vh_rfs.vhd" into library mult_gen_v12_0_14
+INFO: [VRFC 10-3107] analyzing entity 'op_resize'
+INFO: [VRFC 10-3107] analyzing entity 'delay_line'
+INFO: [VRFC 10-3107] analyzing entity 'cc_compare'
+INFO: [VRFC 10-3107] analyzing entity 'luts'
+INFO: [VRFC 10-3107] analyzing entity 'mult18'
+INFO: [VRFC 10-3107] analyzing entity 'dsp'
+INFO: [VRFC 10-3107] analyzing entity 'hybrid'
+INFO: [VRFC 10-3107] analyzing entity 'ccm_dist_mem'
+INFO: [VRFC 10-3107] analyzing entity 'ccm_sp_block_mem'
+INFO: [VRFC 10-3107] analyzing entity 'ccm_dp_block_mem'
+INFO: [VRFC 10-3107] analyzing entity 'ccm_syncmem'
+INFO: [VRFC 10-3107] analyzing entity 'ccm_scaled_adder'
+INFO: [VRFC 10-3107] analyzing entity 'ccm_operation'
+INFO: [VRFC 10-3107] analyzing entity 'ccm'
+INFO: [VRFC 10-3107] analyzing entity 'three_input_adder'
+INFO: [VRFC 10-3107] analyzing entity 'multmxn_lut6'
+INFO: [VRFC 10-3107] analyzing entity 'mult_gen_v12_0_14_viv'
+INFO: [VRFC 10-3107] analyzing entity 'mult_gen_v12_0_14'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/Exp5.ip_user_files/ipstatic/hdl/floating_point_v7_0_vh_rfs.vhd" into library floating_point_v7_0_15
+INFO: [VRFC 10-3107] analyzing entity 'fdgS'
+INFO: [VRFC 10-3107] analyzing entity 'fdgW'
+INFO: [VRFC 10-3107] analyzing entity 'lutV'
+INFO: [VRFC 10-3107] analyzing entity 'lutS'
+INFO: [VRFC 10-3107] analyzing entity 'lutN'
+INFO: [VRFC 10-3107] analyzing entity 'lutNMuxS'
+INFO: [VRFC 10-3107] analyzing entity 'srl16eS'
+INFO: [VRFC 10-3107] analyzing entity 'delayS'
+INFO: [VRFC 10-3107] analyzing entity 'andW'
+INFO: [VRFC 10-3107] analyzing entity 'orW'
+INFO: [VRFC 10-3107] analyzing entity 'srl16ew'
+INFO: [VRFC 10-3107] analyzing entity 'delayW'
+INFO: [VRFC 10-3107] analyzing entity 'compW'
+INFO: [VRFC 10-3107] analyzing entity 'addSubW'
+INFO: [VRFC 10-3107] analyzing entity 'equalW'
+INFO: [VRFC 10-3107] analyzing entity 'addW'
+INFO: [VRFC 10-3107] analyzing entity 'mult18'
+INFO: [VRFC 10-3107] analyzing entity 'cntrlgen'
+INFO: [VRFC 10-3107] analyzing entity 'cntrlgen2'
+INFO: [VRFC 10-3107] analyzing entity 'ppGenR8'
+INFO: [VRFC 10-3107] analyzing entity 'ppGenR8Msb2'
+INFO: [VRFC 10-3107] analyzing entity 'addSubShGW'
+INFO: [VRFC 10-3107] analyzing entity 'addSubShFW'
+INFO: [VRFC 10-3107] analyzing entity 'vmRoundW'
+INFO: [VRFC 10-3107] analyzing entity 'vmsMultCore'
+INFO: [VRFC 10-3107] analyzing entity 'wideEmbedMult4'
+INFO: [VRFC 10-3107] analyzing entity 'wideEmbedMult16'
+INFO: [VRFC 10-3107] analyzing entity 'wideEmbedMult'
+INFO: [VRFC 10-3107] analyzing entity 'dsp48MultALine'
+INFO: [VRFC 10-3107] analyzing entity 'dsp48Mult'
+INFO: [VRFC 10-3107] analyzing entity 'xMult'
+INFO: [VRFC 10-3107] analyzing entity 'delay'
+INFO: [VRFC 10-3107] analyzing entity 'delay_s'
+INFO: [VRFC 10-3107] analyzing entity 'mux_bus2'
+INFO: [VRFC 10-3107] analyzing entity 'twos_comp'
+INFO: [VRFC 10-3107] analyzing entity 'carry_chain'
+INFO: [VRFC 10-3107] analyzing entity 'mux4'
+INFO: [VRFC 10-3107] analyzing entity 'compare_gt'
+INFO: [VRFC 10-3107] analyzing entity 'compare_eq_im'
+INFO: [VRFC 10-3107] analyzing entity 'compare_ne_im'
+INFO: [VRFC 10-3107] analyzing entity 'compare_eq'
+INFO: [VRFC 10-3107] analyzing entity 'compare'
+INFO: [VRFC 10-3107] analyzing entity 'special_detect'
+INFO: [VRFC 10-3107] analyzing entity 'norm_zero_det'
+INFO: [VRFC 10-3107] analyzing entity 'zero_det_sel'
+INFO: [VRFC 10-3107] analyzing entity 'shift_msb_first'
+INFO: [VRFC 10-3107] analyzing entity 'flt_dec_op'
+INFO: [VRFC 10-3107] analyzing entity 'flt_dec_op_lat'
+INFO: [VRFC 10-3107] analyzing entity 'lead_zero_encode'
+INFO: [VRFC 10-3107] analyzing entity 'lead_zero_encode_shift'
+INFO: [VRFC 10-3107] analyzing entity 'dsp48e1_wrapper'
+INFO: [VRFC 10-3107] analyzing entity 'dsp48e2_wrapper'
+INFO: [VRFC 10-3107] analyzing entity 'addsub_logic'
+INFO: [VRFC 10-3107] analyzing entity 'addsub_dsp'
+INFO: [VRFC 10-3107] analyzing entity 'addsub'
+INFO: [VRFC 10-3107] analyzing entity 'flt_round_bit'
+INFO: [VRFC 10-3107] analyzing entity 'renorm_and_round_logic'
+INFO: [VRFC 10-3107] analyzing entity 'norm_and_round_dsp48e1_sgl'
+INFO: [VRFC 10-3107] analyzing entity 'norm_and_round_logic'
+INFO: [VRFC 10-3107] analyzing entity 'alignment'
+INFO: [VRFC 10-3107] analyzing entity 'normalize'
+INFO: [VRFC 10-3107] analyzing entity 'align_add_dsp48e1_sgl'
+INFO: [VRFC 10-3107] analyzing entity 'align_add'
+INFO: [VRFC 10-3107] analyzing entity 'multadd'
+INFO: [VRFC 10-3107] analyzing entity 'compare_ge'
+INFO: [VRFC 10-3107] analyzing entity 'fix_to_flt_conv_exp'
+INFO: [VRFC 10-3107] analyzing entity 'fix_to_flt_conv'
+INFO: [VRFC 10-3107] analyzing entity 'flt_to_fix_conv'
+INFO: [VRFC 10-3107] analyzing entity 'flt_to_flt_conv_exp'
+INFO: [VRFC 10-3107] analyzing entity 'flt_to_flt_conv'
+INFO: [VRFC 10-3107] analyzing entity 'fp_cmp'
+INFO: [VRFC 10-3107] analyzing entity 'flt_sqrt_mant_addsub'
+INFO: [VRFC 10-3107] analyzing entity 'flt_sqrt_mant'
+INFO: [VRFC 10-3107] analyzing entity 'flt_sqrt_exp'
+INFO: [VRFC 10-3107] analyzing entity 'flt_sqrt'
+INFO: [VRFC 10-3107] analyzing entity 'flt_div_mant_addsub'
+INFO: [VRFC 10-3107] analyzing entity 'flt_div_mant'
+INFO: [VRFC 10-3107] analyzing entity 'flt_div_exp'
+INFO: [VRFC 10-3107] analyzing entity 'flt_div'
+INFO: [VRFC 10-3107] analyzing entity 'fix_mult_dsp48e1_lat_dbl'
+INFO: [VRFC 10-3107] analyzing entity 'fix_mult_dsp48e1_sgl'
+INFO: [VRFC 10-3107] analyzing entity 'fix_mult_dsp48e1_dbl'
+INFO: [VRFC 10-3107] analyzing entity 'fix_mult_dsp48e2_dbl'
+INFO: [VRFC 10-3107] analyzing entity 'fix_mult_qq'
+INFO: [VRFC 10-3107] analyzing entity 'fix_mult_xx'
+INFO: [VRFC 10-3107] analyzing entity 'fix_mult'
+INFO: [VRFC 10-3107] analyzing entity 'flt_round_dsp_opt_full'
+INFO: [VRFC 10-3107] analyzing entity 'flt_round_dsp_opt_part'
+INFO: [VRFC 10-3107] analyzing entity 'flt_mult_round'
+INFO: [VRFC 10-3107] analyzing entity 'flt_mult_exp'
+INFO: [VRFC 10-3107] analyzing entity 'flt_mult'
+INFO: [VRFC 10-3107] analyzing entity 'flt_add_exp'
+INFO: [VRFC 10-3107] analyzing entity 'flt_add_logic'
+INFO: [VRFC 10-3107] analyzing entity 'flt_add_dsp'
+INFO: [VRFC 10-3107] analyzing entity 'flt_add_lat_align_add'
+INFO: [VRFC 10-3107] analyzing entity 'flt_add_lat_norm'
+INFO: [VRFC 10-3107] analyzing entity 'flt_add_lat_exp'
+INFO: [VRFC 10-3107] analyzing entity 'flt_add_lat'
+INFO: [VRFC 10-3107] analyzing entity 'flt_add'
+INFO: [VRFC 10-3107] analyzing entity 'flt_recip_approx'
+INFO: [VRFC 10-3107] analyzing entity 'flt_recip_nr'
+INFO: [VRFC 10-3107] analyzing entity 'flt_recip_reduction_calc'
+INFO: [VRFC 10-3107] analyzing entity 'flt_recip_eval'
+INFO: [VRFC 10-3107] analyzing entity 'flt_recip_postprocess'
+INFO: [VRFC 10-3107] analyzing entity 'flt_recip_specialcase'
+INFO: [VRFC 10-3107] analyzing entity 'flt_recip_recomb'
+INFO: [VRFC 10-3107] analyzing entity 'flt_recipsqrt_dp_m_calc'
+INFO: [VRFC 10-3107] analyzing entity 'flt_recip'
+INFO: [VRFC 10-3107] analyzing entity 'flt_log_addsub'
+INFO: [VRFC 10-3107] analyzing entity 'flt_log_addsub_taylor_fabric'
+INFO: [VRFC 10-3107] analyzing entity 'flt_log_addsub_taylor_combiner_fabric'
+INFO: [VRFC 10-3107] analyzing entity 'flt_log_single_one_detect'
+INFO: [VRFC 10-3107] analyzing entity 'flt_log_inproc'
+INFO: [VRFC 10-3107] analyzing entity 'flt_log_exp'
+INFO: [VRFC 10-3107] analyzing entity 'flt_log_L_block_memory'
+INFO: [VRFC 10-3107] analyzing entity 'flt_pt_log_L_block'
+INFO: [VRFC 10-3107] analyzing entity 'flt_log_rr_mul_iter'
+INFO: [VRFC 10-3107] analyzing entity 'flt_log_rr_mul'
+INFO: [VRFC 10-3107] analyzing entity 'flt_log_rr'
+INFO: [VRFC 10-3107] analyzing entity 'flt_log_taylor'
+INFO: [VRFC 10-3107] analyzing entity 'flt_log_shift_msb_first'
+INFO: [VRFC 10-3107] analyzing entity 'flt_log_lead_zero_encode'
+INFO: [VRFC 10-3107] analyzing entity 'flt_log_normalize'
+INFO: [VRFC 10-3107] analyzing entity 'flt_log_norm'
+INFO: [VRFC 10-3107] analyzing entity 'flt_log_rnd'
+INFO: [VRFC 10-3107] analyzing entity 'flt_log_specialcase'
+INFO: [VRFC 10-3107] analyzing entity 'flt_log_recomb'
+INFO: [VRFC 10-3107] analyzing entity 'flt_log'
+INFO: [VRFC 10-3107] analyzing entity 'flt_exp_specialcase'
+INFO: [VRFC 10-3107] analyzing entity 'flt_exp_recomb'
+INFO: [VRFC 10-3107] analyzing entity 'flt_exp_ccm'
+INFO: [VRFC 10-3107] analyzing entity 'flt_exp_e2A'
+INFO: [VRFC 10-3107] analyzing entity 'flt_exp_dp_poly'
+INFO: [VRFC 10-3107] analyzing entity 'flt_exp_e2zmzm1'
+INFO: [VRFC 10-3107] analyzing entity 'flt_exp'
+INFO: [VRFC 10-3107] analyzing entity 'flt_fma_specialcase'
+INFO: [VRFC 10-3107] analyzing entity 'flt_fma_round_bit'
+INFO: [VRFC 10-3107] analyzing entity 'flt_fma_renorm_and_round_logic'
+INFO: [VRFC 10-3107] analyzing entity 'flt_fma_special_detect'
+INFO: [VRFC 10-3107] analyzing entity 'flt_fma_add_exp'
+INFO: [VRFC 10-3107] analyzing entity 'flt_fma_alignment'
+INFO: [VRFC 10-3107] analyzing entity 'flt_fma_addsub_dsp1'
+INFO: [VRFC 10-3107] analyzing entity 'flt_fma_addsub_dsp2'
+INFO: [VRFC 10-3107] analyzing entity 'flt_fma_addsub'
+INFO: [VRFC 10-3107] analyzing entity 'flt_fma_align_add'
+INFO: [VRFC 10-3107] analyzing entity 'flt_fma_norm_logic'
+INFO: [VRFC 10-3107] analyzing entity 'flt_fma_add_logic'
+INFO: [VRFC 10-3107] analyzing entity 'flt_fma_add'
+INFO: [VRFC 10-3107] analyzing entity 'flt_fma_mul'
+INFO: [VRFC 10-3107] analyzing entity 'flt_fma'
+INFO: [VRFC 10-3107] analyzing entity 'flt_accum_flt_to_fix'
+INFO: [VRFC 10-3107] analyzing entity 'flt_accum_bit_encode'
+INFO: [VRFC 10-3107] analyzing entity 'flt_accum'
+INFO: [VRFC 10-3107] analyzing entity 'floating_point_v7_0_15_viv'
+INFO: [VRFC 10-3107] analyzing entity 'floating_point_v7_0_15'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/Exp5.ip_user_files/ipstatic/hdl/xbip_dsp48_mult_v3_0_vh_rfs.vhd" into library xbip_dsp48_mult_v3_0_5
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48_mult_rtl'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48_mult_synth'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48_mult_v3_0_5_viv'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48_mult_v3_0_5'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/Exp5.ip_user_files/ipstatic/hdl/xbip_dsp48_multadd_v3_0_vh_rfs.vhd" into library xbip_dsp48_multadd_v3_0_5
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48_multadd_rtl'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48_multadd_synth'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48_multadd_v3_0_5_viv'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48_multadd_v3_0_5'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/Exp5.ip_user_files/ipstatic/hdl/div_gen_v5_1_vh_rfs.vhd" into library div_gen_v5_1_13
+INFO: [VRFC 10-3107] analyzing entity 'c_addsub_lut6'
+INFO: [VRFC 10-3107] analyzing entity 'c_addsub_viv'
+INFO: [VRFC 10-3107] analyzing entity 'c_twos_comp_viv'
+INFO: [VRFC 10-3107] analyzing entity 'cmp2s_v'
+INFO: [VRFC 10-3107] analyzing entity 'addsubreg_v'
+INFO: [VRFC 10-3107] analyzing entity 'dividervdc_v'
+INFO: [VRFC 10-3107] analyzing entity 'div_lutmult'
+INFO: [VRFC 10-3107] analyzing entity 'bip_sdivider_synth'
+INFO: [VRFC 10-3107] analyzing entity 'fixed_to_float'
+INFO: [VRFC 10-3107] analyzing entity 'flow_ctrl'
+INFO: [VRFC 10-3107] analyzing entity 'estimator'
+INFO: [VRFC 10-3107] analyzing entity 'prescaler'
+INFO: [VRFC 10-3107] analyzing entity 'prenormalizer'
+INFO: [VRFC 10-3107] analyzing entity 'iterative_unit'
+INFO: [VRFC 10-3107] analyzing entity 'quot_addsub'
+INFO: [VRFC 10-3107] analyzing entity 'quotient_collector'
+INFO: [VRFC 10-3107] analyzing entity 'hrdiv_viv'
+INFO: [VRFC 10-3107] analyzing entity 'div_gen_synth'
+INFO: [VRFC 10-3107] analyzing entity 'div_gen_v5_1_13_viv'
+INFO: [VRFC 10-3107] analyzing entity 'div_gen_v5_1_13'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/Exp5.srcs/sources_1/ip/divider/sim/divider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'divider'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/Exp5.srcs/sources_1/ip/multiplier/sim/multiplier.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'multiplier'
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:28 . Memory (MB): peak = 1425.684 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '29' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/Exp5.sim/sim_1/behav/xsim'
+"xelab -wto ee483bd22de04824896a12873b7858bd --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_9 -L axi_utils_v2_0_5 -L xbip_pipe_v3_0_5 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_5 -L xbip_bram18k_v3_0_5 -L mult_gen_v12_0_14 -L floating_point_v7_0_15 -L xbip_dsp48_mult_v3_0_5 -L xbip_dsp48_multadd_v3_0_5 -L div_gen_v5_1_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot core_sim_behav xil_defaultlib.core_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto ee483bd22de04824896a12873b7858bd --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_9 -L axi_utils_v2_0_5 -L xbip_pipe_v3_0_5 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_5 -L xbip_bram18k_v3_0_5 -L mult_gen_v12_0_14 -L floating_point_v7_0_15 -L xbip_dsp48_mult_v3_0_5 -L xbip_dsp48_multadd_v3_0_5 -L div_gen_v5_1_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot core_sim_behav xil_defaultlib.core_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'addra' [C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/core/FU_mem.v:49]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package mult_gen_v12_0_14.mult_gen_v12_0_14_viv_comp
+Compiling package xbip_utils_v3_0_9.xbip_utils_v3_0_9_pkg
+Compiling package mult_gen_v12_0_14.mult_gen_v12_0_14_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package div_gen_v5_1_13.div_gen_v5_1_13_viv_comp
+Compiling package xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv_comp
+Compiling package axi_utils_v2_0_5.axi_utils_v2_0_5_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_5.global_util_pkg
+Compiling package axi_utils_v2_0_5.axi_utils_comps
+Compiling package xbip_bram18k_v3_0_5.xbip_bram18k_v3_0_5_pkg
+Compiling package div_gen_v5_1_13.div_gen_pkg
+Compiling package div_gen_v5_1_13.pkg_addsub
+Compiling module xil_defaultlib.debug_clk
+Compiling module xil_defaultlib.REG32
+Compiling module xil_defaultlib.add_32
+Compiling module xil_defaultlib.MUX2T1_32
+Compiling module xil_defaultlib.ROM_D
+Compiling module xil_defaultlib.REG_ID
+Compiling module xil_defaultlib.CtrlUnit
+Compiling module xil_defaultlib.ImmGen
+Compiling module xil_defaultlib.Regs
+Compiling module xil_defaultlib.FU_ALU
+Compiling module xil_defaultlib.RAM_B
+Compiling module xil_defaultlib.FU_mem
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1000")(0,3)\]
+Compiling architecture mult_and_v of entity unisim.MULT_AND [mult_and_default]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture xilinx of entity mult_gen_v12_0_14.op_resize [\op_resize(ai_width=32,bi_width=...]
+Compiling architecture xilinx of entity mult_gen_v12_0_14.luts [\luts(c_xdevicefamily="kintex7",...]
+Compiling architecture xilinx of entity mult_gen_v12_0_14.mult_gen_v12_0_14_viv [\mult_gen_v12_0_14_viv(c_verbosi...]
+Compiling architecture xilinx of entity mult_gen_v12_0_14.mult_gen_v12_0_14 [\mult_gen_v12_0_14(c_xdevicefami...]
+Compiling architecture multiplier_arch of entity xil_defaultlib.multiplier [multiplier_default]
+Compiling module xil_defaultlib.FU_mul
+Compiling architecture synth of entity div_gen_v5_1_13.c_twos_comp_viv [\c_twos_comp_viv(c_width=32,c_ai...]
+Compiling architecture virtex of entity div_gen_v5_1_13.cmp2s_v [\cmp2s_v(c_bus_width=32,c_regist...]
+Compiling architecture synth of entity div_gen_v5_1_13.c_twos_comp_viv [\c_twos_comp_viv(c_width=32,c_ai...]
+Compiling architecture virtex of entity div_gen_v5_1_13.cmp2s_v [\cmp2s_v(c_bus_width=32,c_ainit_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture rtl of entity div_gen_v5_1_13.c_addsub_lut6 [\c_addsub_lut6(c_width=33,c_add_...]
+Compiling architecture synth of entity div_gen_v5_1_13.c_addsub_viv [\c_addsub_viv(c_a_width=33,c_b_w...]
+Compiling architecture virtex of entity div_gen_v5_1_13.addsubreg_v [\addsubreg_v(c_bus_width=33,c_ai...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture rtl of entity div_gen_v5_1_13.c_addsub_lut6 [\c_addsub_lut6(c_width=33,c_add_...]
+Compiling architecture synth of entity div_gen_v5_1_13.c_addsub_viv [\c_addsub_viv(c_a_width=33,c_b_w...]
+Compiling architecture virtex of entity div_gen_v5_1_13.addsubreg_v [\addsubreg_v(c_bus_width=33,c_ha...]
+Compiling architecture virtex of entity div_gen_v5_1_13.dividervdc_v [\dividervdc_v(bus_num=32,bus_div...]
+Compiling architecture synth of entity div_gen_v5_1_13.c_twos_comp_viv [\c_twos_comp_viv(c_width=33,c_ai...]
+Compiling architecture virtex of entity div_gen_v5_1_13.cmp2s_v [\cmp2s_v(c_bus_width=33,c_regist...]
+Compiling architecture synth of entity div_gen_v5_1_13.bip_sdivider_synth [\bip_sdivider_synth(c_xdevicefam...]
+Compiling architecture synth of entity div_gen_v5_1_13.div_gen_synth [\div_gen_synth(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity div_gen_v5_1_13.div_gen_v5_1_13_viv [\div_gen_v5_1_13_viv(c_xdevicefa...]
+Compiling architecture xilinx of entity div_gen_v5_1_13.div_gen_v5_1_13 [\div_gen_v5_1_13(c_xdevicefamily...]
+Compiling architecture divider_arch of entity xil_defaultlib.divider [divider_default]
+Compiling module xil_defaultlib.FU_div
+Compiling module xil_defaultlib.cmp_32
+Compiling module xil_defaultlib.FU_jump
+Compiling module xil_defaultlib.MUX8T1_32
+Compiling module xil_defaultlib.RV32core
+Compiling module xil_defaultlib.core_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot core_sim_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/lenovo/Desktop/CA/lab5/Exp5 -notrace
+couldn't read file "C:/Users/lenovo/Desktop/CA/lab5/Exp5": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Sun Dec  4 00:03:49 2022...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:27 . Memory (MB): peak = 1425.684 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '27' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/Exp5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "core_sim_behav -key {Behavioral:sim_1:Functional:core_sim} -tclbatch {core_sim.tcl} -view {{C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/sim/core_sim_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/sim/core_sim_behav.wcfg}
+source core_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'core_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:01:05 . Memory (MB): peak = 1425.684 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 300 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1425.684 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/Exp5.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/vivado2020/Vivado/2020.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/Exp5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-20] The project contains locked or custom IPs. The pre-compiled version of these IPs will not be referenced and the sources from these IP libraries will be compiled locally.
+INFO: [SIM-utils-54] Inspecting design source files for 'core_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/Exp5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj core_sim_vlog.prj"
+"xvhdl --incr --relax -prj core_sim_vhdl.prj"
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1425.684 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '8' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/Exp5.sim/sim_1/behav/xsim'
+"xelab -wto ee483bd22de04824896a12873b7858bd --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_9 -L axi_utils_v2_0_5 -L xbip_pipe_v3_0_5 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_5 -L xbip_bram18k_v3_0_5 -L mult_gen_v12_0_14 -L floating_point_v7_0_15 -L xbip_dsp48_mult_v3_0_5 -L xbip_dsp48_multadd_v3_0_5 -L div_gen_v5_1_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot core_sim_behav xil_defaultlib.core_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto ee483bd22de04824896a12873b7858bd --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_9 -L axi_utils_v2_0_5 -L xbip_pipe_v3_0_5 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_5 -L xbip_bram18k_v3_0_5 -L mult_gen_v12_0_14 -L floating_point_v7_0_15 -L xbip_dsp48_mult_v3_0_5 -L xbip_dsp48_multadd_v3_0_5 -L div_gen_v5_1_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot core_sim_behav xil_defaultlib.core_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'addra' [C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/core/FU_mem.v:49]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/Exp5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "core_sim_behav -key {Behavioral:sim_1:Functional:core_sim} -tclbatch {core_sim.tcl} -view {{C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/sim/core_sim_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/sim/core_sim_behav.wcfg}
+source core_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'core_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:22 . Memory (MB): peak = 1425.684 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 300 ns
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/Exp5.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/vivado2020/Vivado/2020.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/Exp5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-20] The project contains locked or custom IPs. The pre-compiled version of these IPs will not be referenced and the sources from these IP libraries will be compiled locally.
+INFO: [SIM-utils-54] Inspecting design source files for 'core_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/Exp5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj core_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/core/CtrlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CtrlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/core/FU_ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FU_ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/core/FU_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FU_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/core/FU_jump.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FU_jump
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/core/FU_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FU_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/core/FU_mul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FU_mul
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/core/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/common/MUX2T1_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2T1_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/common/MUX8T1_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX8T1_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/core/RAM_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/common/REG32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/core/REG_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/core/ROM_D.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_D
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/core/RV32core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RV32core
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/core/Regs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regs
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/common/add_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/auxillary/debug_clk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debug_clk
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/sim/core_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module core_sim
+"xvhdl --incr --relax -prj core_sim_vhdl.prj"
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 1489.262 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '14' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/Exp5.sim/sim_1/behav/xsim'
+"xelab -wto ee483bd22de04824896a12873b7858bd --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_9 -L axi_utils_v2_0_5 -L xbip_pipe_v3_0_5 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_5 -L xbip_bram18k_v3_0_5 -L mult_gen_v12_0_14 -L floating_point_v7_0_15 -L xbip_dsp48_mult_v3_0_5 -L xbip_dsp48_multadd_v3_0_5 -L div_gen_v5_1_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot core_sim_behav xil_defaultlib.core_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado2020/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto ee483bd22de04824896a12873b7858bd --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_9 -L axi_utils_v2_0_5 -L xbip_pipe_v3_0_5 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_5 -L xbip_bram18k_v3_0_5 -L mult_gen_v12_0_14 -L floating_point_v7_0_15 -L xbip_dsp48_mult_v3_0_5 -L xbip_dsp48_multadd_v3_0_5 -L div_gen_v5_1_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot core_sim_behav xil_defaultlib.core_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package mult_gen_v12_0_14.mult_gen_v12_0_14_viv_comp
+Compiling package xbip_utils_v3_0_9.xbip_utils_v3_0_9_pkg
+Compiling package mult_gen_v12_0_14.mult_gen_v12_0_14_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package div_gen_v5_1_13.div_gen_v5_1_13_viv_comp
+Compiling package xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv_comp
+Compiling package axi_utils_v2_0_5.axi_utils_v2_0_5_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_5.global_util_pkg
+Compiling package axi_utils_v2_0_5.axi_utils_comps
+Compiling package xbip_bram18k_v3_0_5.xbip_bram18k_v3_0_5_pkg
+Compiling package div_gen_v5_1_13.div_gen_pkg
+Compiling package div_gen_v5_1_13.pkg_addsub
+Compiling module xil_defaultlib.debug_clk
+Compiling module xil_defaultlib.REG32
+Compiling module xil_defaultlib.add_32
+Compiling module xil_defaultlib.MUX2T1_32
+Compiling module xil_defaultlib.ROM_D
+Compiling module xil_defaultlib.REG_ID
+Compiling module xil_defaultlib.CtrlUnit
+Compiling module xil_defaultlib.ImmGen
+Compiling module xil_defaultlib.Regs
+Compiling module xil_defaultlib.FU_ALU
+Compiling module xil_defaultlib.RAM_B
+Compiling module xil_defaultlib.FU_mem
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1000")(0,3)\]
+Compiling architecture mult_and_v of entity unisim.MULT_AND [mult_and_default]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture xilinx of entity mult_gen_v12_0_14.op_resize [\op_resize(ai_width=32,bi_width=...]
+Compiling architecture xilinx of entity mult_gen_v12_0_14.luts [\luts(c_xdevicefamily="kintex7",...]
+Compiling architecture xilinx of entity mult_gen_v12_0_14.mult_gen_v12_0_14_viv [\mult_gen_v12_0_14_viv(c_verbosi...]
+Compiling architecture xilinx of entity mult_gen_v12_0_14.mult_gen_v12_0_14 [\mult_gen_v12_0_14(c_xdevicefami...]
+Compiling architecture multiplier_arch of entity xil_defaultlib.multiplier [multiplier_default]
+Compiling module xil_defaultlib.FU_mul
+Compiling architecture synth of entity div_gen_v5_1_13.c_twos_comp_viv [\c_twos_comp_viv(c_width=32,c_ai...]
+Compiling architecture virtex of entity div_gen_v5_1_13.cmp2s_v [\cmp2s_v(c_bus_width=32,c_regist...]
+Compiling architecture synth of entity div_gen_v5_1_13.c_twos_comp_viv [\c_twos_comp_viv(c_width=32,c_ai...]
+Compiling architecture virtex of entity div_gen_v5_1_13.cmp2s_v [\cmp2s_v(c_bus_width=32,c_ainit_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture rtl of entity div_gen_v5_1_13.c_addsub_lut6 [\c_addsub_lut6(c_width=33,c_add_...]
+Compiling architecture synth of entity div_gen_v5_1_13.c_addsub_viv [\c_addsub_viv(c_a_width=33,c_b_w...]
+Compiling architecture virtex of entity div_gen_v5_1_13.addsubreg_v [\addsubreg_v(c_bus_width=33,c_ai...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture rtl of entity div_gen_v5_1_13.c_addsub_lut6 [\c_addsub_lut6(c_width=33,c_add_...]
+Compiling architecture synth of entity div_gen_v5_1_13.c_addsub_viv [\c_addsub_viv(c_a_width=33,c_b_w...]
+Compiling architecture virtex of entity div_gen_v5_1_13.addsubreg_v [\addsubreg_v(c_bus_width=33,c_ha...]
+Compiling architecture virtex of entity div_gen_v5_1_13.dividervdc_v [\dividervdc_v(bus_num=32,bus_div...]
+Compiling architecture synth of entity div_gen_v5_1_13.c_twos_comp_viv [\c_twos_comp_viv(c_width=33,c_ai...]
+Compiling architecture virtex of entity div_gen_v5_1_13.cmp2s_v [\cmp2s_v(c_bus_width=33,c_regist...]
+Compiling architecture synth of entity div_gen_v5_1_13.bip_sdivider_synth [\bip_sdivider_synth(c_xdevicefam...]
+Compiling architecture synth of entity div_gen_v5_1_13.div_gen_synth [\div_gen_synth(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity div_gen_v5_1_13.div_gen_v5_1_13_viv [\div_gen_v5_1_13_viv(c_xdevicefa...]
+Compiling architecture xilinx of entity div_gen_v5_1_13.div_gen_v5_1_13 [\div_gen_v5_1_13(c_xdevicefamily...]
+Compiling architecture divider_arch of entity xil_defaultlib.divider [divider_default]
+Compiling module xil_defaultlib.FU_div
+Compiling module xil_defaultlib.FU_jump
+Compiling module xil_defaultlib.MUX8T1_32
+Compiling module xil_defaultlib.RV32core
+Compiling module xil_defaultlib.core_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot core_sim_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:17 . Memory (MB): peak = 1489.262 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '17' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/Exp5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "core_sim_behav -key {Behavioral:sim_1:Functional:core_sim} -tclbatch {core_sim.tcl} -view {{C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/sim/core_sim_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config {C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/sim/core_sim_behav.wcfg}
+source core_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1489.262 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'core_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:39 . Memory (MB): peak = 1489.262 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 300 ns
+run 300 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Dec  4 19:44:15 2022...

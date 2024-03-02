@@ -1,0 +1,98 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat Dec  3 14:42:45 2022
+# Process ID: 2852
+# Current directory: C:/Users/lenovo/Desktop/Exp5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2464 C:\Users\lenovo\Desktop\Exp5\Exp5.xpr
+# Log file: C:/Users/lenovo/Desktop/Exp5/vivado.log
+# Journal file: C:/Users/lenovo/Desktop/Exp5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lenovo/Desktop/Exp5/Exp5.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+add_files -fileset constrs_1 -norecurse C:/Users/lenovo/Desktop/constraint.xdc
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+launch_simulation
+open_wave_config C:/Users/lenovo/Desktop/Exp5/code/sim/core_sim_behav.wcfg
+source core_sim.tcl
+run 300 ns
+restart
+run 300 ns
+close_sim
+close_project
+open_project D:/atom/CA/CALab/Exp5/Exp5.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config D:/atom/CA/CALab/Exp5/code/sim/core_sim_behav.wcfg
+source core_sim.tcl
+restart
+run 300 ns
+close_sim
+close_project
+open_project C:/Users/lenovo/Desktop/Exp5/Exp5.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/lenovo/Desktop/Exp5/code/sim/core_sim_behav.wcfg
+source core_sim.tcl
+restart
+run 300 ns
+close_sim
+close_project
+open_project D:/atom/CA/CALab/Exp5/Exp5.xpr
+update_compile_order -fileset sources_1
+close_project
+open_project C:/Users/lenovo/Desktop/Exp5/Exp5.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/lenovo/Desktop/Exp5/code/sim/core_sim_behav.wcfg
+source core_sim.tcl
+restart
+run 300 ns
+close_sim
+close_project
+open_project D:/atom/CA/CALab/Exp5/Exp5.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config D:/atom/CA/CALab/Exp5/code/sim/core_sim_behav.wcfg
+source core_sim.tcl
+close_sim
+close_project
+open_project C:/Users/lenovo/Desktop/CA/lab5/Project/Exp5.xpr
+update_compile_order -fileset sources_1
+save_project_as project_1 C:/Users/lenovo/Desktop/CA/lab5/Project/project_1 -force
+close_project
+open_project {C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/Exp5.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config {C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/sim/core_sim_behav.wcfg}
+source core_sim.tcl
+restart
+run 300 ns
+close_sim
+launch_simulation
+open_wave_config {C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/sim/core_sim_behav.wcfg}
+source core_sim.tcl
+restart
+run 300 ns
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+open_wave_config {C:/Users/lenovo/Desktop/CA/lab5/Exp5 code4stu/Exp5/code/sim/core_sim_behav.wcfg}
+source core_sim.tcl
+restart
+run 300 ns
+run 300 ns
+close_sim

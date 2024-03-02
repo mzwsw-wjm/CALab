@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Nov  8 20:04:31 2022
+# Process ID: 26008
+# Current directory: C:/Users/lenovo/Desktop/Exp3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent29884 C:\Users\lenovo\Desktop\Exp3\Exp3.xpr
+# Log file: C:/Users/lenovo/Desktop/Exp3/vivado.log
+# Journal file: C:/Users/lenovo/Desktop/Exp3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lenovo/Desktop/Exp3/Exp3.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/lenovo/Desktop/Exp3/code/wave/cache_sim_behav.wcfg
+source cache_sim.tcl
+close_sim

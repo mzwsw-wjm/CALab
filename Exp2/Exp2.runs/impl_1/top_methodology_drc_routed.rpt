@@ -1,0 +1,457 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Tue Nov  8 21:29:40 2022
+| Host         : LAPTOP-GIMOV2AL running 64-bit major release  (build 9200)
+| Command      : report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
+| Design       : top
+| Device       : xc7k325tlffg676-2L
+| Speed File   : -2L
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 84
++-----------+------------------+-----------------------+------------+
+| Rule      | Severity         | Description           | Violations |
++-----------+------------------+-----------------------+------------+
+| TIMING-14 | Critical Warning | LUT on the clock tree | 1          |
+| TIMING-16 | Warning          | Large setup violation | 32         |
+| TIMING-20 | Warning          | Non-clocked latch     | 51         |
++-----------+------------------+-----------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-14#1 Critical Warning
+LUT on the clock tree  
+The LUT BTN_SCAN/data[126][7]_i_11 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -3.969 ns between core/reg_ID_EX/A_EX_reg[3]/C (clocked by clkout3) and vga/data_buf_reg_0_3_24_29/RAMA_D1/I (clocked by clkout0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -3.974 ns between core/reg_ID_EX/A_EX_reg[3]/C (clocked by clkout3) and vga/data_buf_reg_0_3_24_29/RAMB_D1/I (clocked by clkout0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -4.079 ns between core/reg_ID_EX/A_EX_reg[3]/C (clocked by clkout3) and vga/data_buf_reg_0_3_18_23/RAMC/I (clocked by clkout0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -4.089 ns between core/reg_ID_EX/A_EX_reg[3]/C (clocked by clkout3) and vga/data_buf_reg_0_3_24_29/RAMC/I (clocked by clkout0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -4.162 ns between core/reg_ID_EX/A_EX_reg[3]/C (clocked by clkout3) and vga/data_buf_reg_0_3_24_29/RAMB/I (clocked by clkout0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -4.175 ns between core/reg_ID_EX/A_EX_reg[3]/C (clocked by clkout3) and vga/data_buf_reg_0_3_30_31/RAMA/I (clocked by clkout0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -4.263 ns between core/reg_ID_EX/A_EX_reg[3]/C (clocked by clkout3) and vga/data_buf_reg_0_3_12_17/RAMA_D1/I (clocked by clkout0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#8 Warning
+Large setup violation  
+There is a large setup violation of -4.290 ns between core/reg_ID_EX/A_EX_reg[3]/C (clocked by clkout3) and vga/data_buf_reg_0_3_6_11/RAMB/I (clocked by clkout0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#9 Warning
+Large setup violation  
+There is a large setup violation of -4.356 ns between core/reg_ID_EX/A_EX_reg[3]/C (clocked by clkout3) and vga/data_buf_reg_0_3_12_17/RAMB_D1/I (clocked by clkout0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#10 Warning
+Large setup violation  
+There is a large setup violation of -4.369 ns between core/reg_ID_EX/A_EX_reg[3]/C (clocked by clkout3) and vga/data_buf_reg_0_3_6_11/RAMA_D1/I (clocked by clkout0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#11 Warning
+Large setup violation  
+There is a large setup violation of -4.385 ns between core/reg_ID_EX/A_EX_reg[3]/C (clocked by clkout3) and vga/data_buf_reg_0_3_0_5/RAMB_D1/I (clocked by clkout0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#12 Warning
+Large setup violation  
+There is a large setup violation of -4.415 ns between core/reg_ID_EX/A_EX_reg[3]/C (clocked by clkout3) and vga/data_buf_reg_0_3_6_11/RAMA/I (clocked by clkout0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#13 Warning
+Large setup violation  
+There is a large setup violation of -4.418 ns between core/reg_ID_EX/A_EX_reg[3]/C (clocked by clkout3) and vga/data_buf_reg_0_3_0_5/RAMB/I (clocked by clkout0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#14 Warning
+Large setup violation  
+There is a large setup violation of -4.423 ns between core/reg_ID_EX/A_EX_reg[3]/C (clocked by clkout3) and vga/data_buf_reg_0_3_0_5/RAMC/I (clocked by clkout0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#15 Warning
+Large setup violation  
+There is a large setup violation of -4.443 ns between core/reg_ID_EX/A_EX_reg[3]/C (clocked by clkout3) and vga/data_buf_reg_0_3_24_29/RAMA/I (clocked by clkout0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#16 Warning
+Large setup violation  
+There is a large setup violation of -4.458 ns between core/reg_ID_EX/A_EX_reg[3]/C (clocked by clkout3) and vga/data_buf_reg_0_3_30_31/RAMA_D1/I (clocked by clkout0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#17 Warning
+Large setup violation  
+There is a large setup violation of -4.463 ns between core/reg_ID_EX/A_EX_reg[3]/C (clocked by clkout3) and vga/data_buf_reg_0_3_12_17/RAMA/I (clocked by clkout0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#18 Warning
+Large setup violation  
+There is a large setup violation of -4.470 ns between core/reg_ID_EX/A_EX_reg[3]/C (clocked by clkout3) and vga/data_buf_reg_0_3_6_11/RAMC/I (clocked by clkout0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#19 Warning
+Large setup violation  
+There is a large setup violation of -4.474 ns between core/reg_ID_EX/A_EX_reg[3]/C (clocked by clkout3) and vga/data_buf_reg_0_3_6_11/RAMB_D1/I (clocked by clkout0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#20 Warning
+Large setup violation  
+There is a large setup violation of -4.474 ns between core/reg_ID_EX/A_EX_reg[3]/C (clocked by clkout3) and vga/data_buf_reg_0_3_6_11/RAMC_D1/I (clocked by clkout0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#21 Warning
+Large setup violation  
+There is a large setup violation of -4.482 ns between core/reg_ID_EX/A_EX_reg[3]/C (clocked by clkout3) and vga/data_buf_reg_0_3_24_29/RAMC_D1/I (clocked by clkout0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#22 Warning
+Large setup violation  
+There is a large setup violation of -4.483 ns between core/reg_ID_EX/A_EX_reg[3]/C (clocked by clkout3) and vga/data_buf_reg_0_3_12_17/RAMB/I (clocked by clkout0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#23 Warning
+Large setup violation  
+There is a large setup violation of -4.485 ns between core/reg_ID_EX/A_EX_reg[3]/C (clocked by clkout3) and vga/data_buf_reg_0_3_12_17/RAMC/I (clocked by clkout0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#24 Warning
+Large setup violation  
+There is a large setup violation of -4.489 ns between core/reg_ID_EX/A_EX_reg[3]/C (clocked by clkout3) and vga/data_buf_reg_0_3_0_5/RAMA/I (clocked by clkout0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#25 Warning
+Large setup violation  
+There is a large setup violation of -4.493 ns between core/reg_ID_EX/A_EX_reg[3]/C (clocked by clkout3) and vga/data_buf_reg_0_3_12_17/RAMC_D1/I (clocked by clkout0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#26 Warning
+Large setup violation  
+There is a large setup violation of -4.517 ns between core/reg_ID_EX/A_EX_reg[3]/C (clocked by clkout3) and vga/data_buf_reg_0_3_18_23/RAMB_D1/I (clocked by clkout0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#27 Warning
+Large setup violation  
+There is a large setup violation of -4.542 ns between core/reg_ID_EX/A_EX_reg[3]/C (clocked by clkout3) and vga/data_buf_reg_0_3_18_23/RAMB/I (clocked by clkout0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#28 Warning
+Large setup violation  
+There is a large setup violation of -4.549 ns between core/reg_ID_EX/A_EX_reg[3]/C (clocked by clkout3) and vga/data_buf_reg_0_3_0_5/RAMC_D1/I (clocked by clkout0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#29 Warning
+Large setup violation  
+There is a large setup violation of -4.590 ns between core/reg_ID_EX/A_EX_reg[3]/C (clocked by clkout3) and vga/data_buf_reg_0_3_0_5/RAMA_D1/I (clocked by clkout0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#30 Warning
+Large setup violation  
+There is a large setup violation of -4.650 ns between core/reg_ID_EX/A_EX_reg[3]/C (clocked by clkout3) and vga/data_buf_reg_0_3_18_23/RAMA/I (clocked by clkout0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#31 Warning
+Large setup violation  
+There is a large setup violation of -4.660 ns between core/reg_ID_EX/A_EX_reg[3]/C (clocked by clkout3) and vga/data_buf_reg_0_3_18_23/RAMC_D1/I (clocked by clkout0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#32 Warning
+Large setup violation  
+There is a large setup violation of -4.690 ns between core/reg_ID_EX/A_EX_reg[3]/C (clocked by clkout3) and vga/data_buf_reg_0_3_18_23/RAMA_D1/I (clocked by clkout0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch core/exp_unit/FSM_onehot_NextState_reg[0] cannot be properly analyzed as its control pin core/exp_unit/FSM_onehot_NextState_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch core/exp_unit/FSM_onehot_NextState_reg[1] cannot be properly analyzed as its control pin core/exp_unit/FSM_onehot_NextState_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch core/exp_unit/FSM_onehot_NextState_reg[2] cannot be properly analyzed as its control pin core/exp_unit/FSM_onehot_NextState_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch core/exp_unit/cancel_write_reg cannot be properly analyzed as its control pin core/exp_unit/cancel_write_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch core/exp_unit/count_reg cannot be properly analyzed as its control pin core/exp_unit/count_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch core/exp_unit/csr_raddr_reg[0] cannot be properly analyzed as its control pin core/exp_unit/csr_raddr_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch core/exp_unit/csr_raddr_reg[1] cannot be properly analyzed as its control pin core/exp_unit/csr_raddr_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch core/exp_unit/csr_raddr_reg[2] cannot be properly analyzed as its control pin core/exp_unit/csr_raddr_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch core/exp_unit/csr_raddr_reg[6] cannot be properly analyzed as its control pin core/exp_unit/csr_raddr_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch core/exp_unit/csr_w_reg cannot be properly analyzed as its control pin core/exp_unit/csr_w_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch core/exp_unit/csr_waddr_reg[0] cannot be properly analyzed as its control pin core/exp_unit/csr_waddr_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch core/exp_unit/csr_waddr_reg[1] cannot be properly analyzed as its control pin core/exp_unit/csr_waddr_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch core/exp_unit/csr_waddr_reg[2] cannot be properly analyzed as its control pin core/exp_unit/csr_waddr_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch core/exp_unit/csr_waddr_reg[6] cannot be properly analyzed as its control pin core/exp_unit/csr_waddr_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch core/exp_unit/csr_wdata_reg[0] cannot be properly analyzed as its control pin core/exp_unit/csr_wdata_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch core/exp_unit/csr_wdata_reg[10] cannot be properly analyzed as its control pin core/exp_unit/csr_wdata_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#17 Warning
+Non-clocked latch  
+The latch core/exp_unit/csr_wdata_reg[11] cannot be properly analyzed as its control pin core/exp_unit/csr_wdata_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#18 Warning
+Non-clocked latch  
+The latch core/exp_unit/csr_wdata_reg[12] cannot be properly analyzed as its control pin core/exp_unit/csr_wdata_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#19 Warning
+Non-clocked latch  
+The latch core/exp_unit/csr_wdata_reg[13] cannot be properly analyzed as its control pin core/exp_unit/csr_wdata_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#20 Warning
+Non-clocked latch  
+The latch core/exp_unit/csr_wdata_reg[14] cannot be properly analyzed as its control pin core/exp_unit/csr_wdata_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#21 Warning
+Non-clocked latch  
+The latch core/exp_unit/csr_wdata_reg[15] cannot be properly analyzed as its control pin core/exp_unit/csr_wdata_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#22 Warning
+Non-clocked latch  
+The latch core/exp_unit/csr_wdata_reg[16] cannot be properly analyzed as its control pin core/exp_unit/csr_wdata_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#23 Warning
+Non-clocked latch  
+The latch core/exp_unit/csr_wdata_reg[17] cannot be properly analyzed as its control pin core/exp_unit/csr_wdata_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#24 Warning
+Non-clocked latch  
+The latch core/exp_unit/csr_wdata_reg[18] cannot be properly analyzed as its control pin core/exp_unit/csr_wdata_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#25 Warning
+Non-clocked latch  
+The latch core/exp_unit/csr_wdata_reg[19] cannot be properly analyzed as its control pin core/exp_unit/csr_wdata_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#26 Warning
+Non-clocked latch  
+The latch core/exp_unit/csr_wdata_reg[1] cannot be properly analyzed as its control pin core/exp_unit/csr_wdata_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#27 Warning
+Non-clocked latch  
+The latch core/exp_unit/csr_wdata_reg[20] cannot be properly analyzed as its control pin core/exp_unit/csr_wdata_reg[20]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#28 Warning
+Non-clocked latch  
+The latch core/exp_unit/csr_wdata_reg[21] cannot be properly analyzed as its control pin core/exp_unit/csr_wdata_reg[21]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#29 Warning
+Non-clocked latch  
+The latch core/exp_unit/csr_wdata_reg[22] cannot be properly analyzed as its control pin core/exp_unit/csr_wdata_reg[22]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#30 Warning
+Non-clocked latch  
+The latch core/exp_unit/csr_wdata_reg[23] cannot be properly analyzed as its control pin core/exp_unit/csr_wdata_reg[23]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#31 Warning
+Non-clocked latch  
+The latch core/exp_unit/csr_wdata_reg[24] cannot be properly analyzed as its control pin core/exp_unit/csr_wdata_reg[24]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#32 Warning
+Non-clocked latch  
+The latch core/exp_unit/csr_wdata_reg[25] cannot be properly analyzed as its control pin core/exp_unit/csr_wdata_reg[25]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#33 Warning
+Non-clocked latch  
+The latch core/exp_unit/csr_wdata_reg[26] cannot be properly analyzed as its control pin core/exp_unit/csr_wdata_reg[26]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#34 Warning
+Non-clocked latch  
+The latch core/exp_unit/csr_wdata_reg[27] cannot be properly analyzed as its control pin core/exp_unit/csr_wdata_reg[27]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#35 Warning
+Non-clocked latch  
+The latch core/exp_unit/csr_wdata_reg[28] cannot be properly analyzed as its control pin core/exp_unit/csr_wdata_reg[28]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#36 Warning
+Non-clocked latch  
+The latch core/exp_unit/csr_wdata_reg[29] cannot be properly analyzed as its control pin core/exp_unit/csr_wdata_reg[29]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#37 Warning
+Non-clocked latch  
+The latch core/exp_unit/csr_wdata_reg[2] cannot be properly analyzed as its control pin core/exp_unit/csr_wdata_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#38 Warning
+Non-clocked latch  
+The latch core/exp_unit/csr_wdata_reg[30] cannot be properly analyzed as its control pin core/exp_unit/csr_wdata_reg[30]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#39 Warning
+Non-clocked latch  
+The latch core/exp_unit/csr_wdata_reg[31] cannot be properly analyzed as its control pin core/exp_unit/csr_wdata_reg[31]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#40 Warning
+Non-clocked latch  
+The latch core/exp_unit/csr_wdata_reg[3] cannot be properly analyzed as its control pin core/exp_unit/csr_wdata_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#41 Warning
+Non-clocked latch  
+The latch core/exp_unit/csr_wdata_reg[4] cannot be properly analyzed as its control pin core/exp_unit/csr_wdata_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#42 Warning
+Non-clocked latch  
+The latch core/exp_unit/csr_wdata_reg[5] cannot be properly analyzed as its control pin core/exp_unit/csr_wdata_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#43 Warning
+Non-clocked latch  
+The latch core/exp_unit/csr_wdata_reg[6] cannot be properly analyzed as its control pin core/exp_unit/csr_wdata_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#44 Warning
+Non-clocked latch  
+The latch core/exp_unit/csr_wdata_reg[7] cannot be properly analyzed as its control pin core/exp_unit/csr_wdata_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#45 Warning
+Non-clocked latch  
+The latch core/exp_unit/csr_wdata_reg[8] cannot be properly analyzed as its control pin core/exp_unit/csr_wdata_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#46 Warning
+Non-clocked latch  
+The latch core/exp_unit/csr_wdata_reg[9] cannot be properly analyzed as its control pin core/exp_unit/csr_wdata_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#47 Warning
+Non-clocked latch  
+The latch core/exp_unit/csr_wsc_reg[0] cannot be properly analyzed as its control pin core/exp_unit/csr_wsc_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#48 Warning
+Non-clocked latch  
+The latch core/exp_unit/csr_wsc_reg[1] cannot be properly analyzed as its control pin core/exp_unit/csr_wsc_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#49 Warning
+Non-clocked latch  
+The latch core/exp_unit/flush_mret_reg cannot be properly analyzed as its control pin core/exp_unit/flush_mret_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#50 Warning
+Non-clocked latch  
+The latch core/exp_unit/flush_trap_reg cannot be properly analyzed as its control pin core/exp_unit/flush_trap_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#51 Warning
+Non-clocked latch  
+The latch core/exp_unit/redirect_reg cannot be properly analyzed as its control pin core/exp_unit/redirect_reg/G is not reached by a timing clock
+Related violations: <none>
+
+

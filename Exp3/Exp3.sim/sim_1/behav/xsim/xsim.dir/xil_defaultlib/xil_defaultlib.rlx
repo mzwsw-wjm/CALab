@@ -1,0 +1,8 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+C:/Users/lenovo/Desktop/Exp3/Exp3.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+C:/Users/lenovo/Desktop/Exp3/code/addr_define.vh,1630841752,verilog,,,,,,,,,,,,
+C:/Users/lenovo/Desktop/Exp3/code/cache.v,1668167829,verilog,,C:/Users/lenovo/Desktop/Exp3/code/sim/cache_sim.v,C:/Users/lenovo/Desktop/Exp3/code/addr_define.vh,cache,,,../../../../code,,,,,
+C:/Users/lenovo/Desktop/Exp3/code/sim/cache_sim.v,1628584874,verilog,,,,cache_sim,,,../../../../code,,,,,

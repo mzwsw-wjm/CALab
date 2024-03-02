@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat Dec  3 17:33:37 2022
+# Process ID: 9144
+# Current directory: C:/Users/lenovo/Desktop/Exp5/Exp5.runs/multiplier_synth_1
+# Command line: vivado.exe -log multiplier.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source multiplier.tcl
+# Log file: C:/Users/lenovo/Desktop/Exp5/Exp5.runs/multiplier_synth_1/multiplier.vds
+# Journal file: C:/Users/lenovo/Desktop/Exp5/Exp5.runs/multiplier_synth_1\vivado.jou
+#-----------------------------------------------------------
+source multiplier.tcl -notrace

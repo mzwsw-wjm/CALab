@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Sep 26 20:45:42 2022
+# Process ID: 31296
+# Current directory: C:/Users/lenovo/Desktop/Exp1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent35628 C:\Users\lenovo\Desktop\Exp1\Exp1.xpr
+# Log file: C:/Users/lenovo/Desktop/Exp1/vivado.log
+# Journal file: C:/Users/lenovo/Desktop/Exp1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lenovo/Desktop/Exp1/Exp1.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1

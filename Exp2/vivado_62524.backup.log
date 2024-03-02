@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Nov  2 14:33:40 2022
+# Process ID: 62524
+# Current directory: C:/Users/lenovo/Desktop/Exp2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15476 C:\Users\lenovo\Desktop\Exp2\Exp2.xpr
+# Log file: C:/Users/lenovo/Desktop/Exp2/vivado.log
+# Journal file: C:/Users/lenovo/Desktop/Exp2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lenovo/Desktop/Exp2/Exp2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado2020/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 1016.180 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "C:/Users/lenovo/Desktop/Exp2/Exp2.sim/sim_1/behav/xsim/simulate.log"
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov  2 14:35:26 2022...

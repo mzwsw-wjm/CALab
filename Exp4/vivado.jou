@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Nov 22 00:27:05 2022
+# Process ID: 53716
+# Current directory: C:/Users/lenovo/Desktop/Exp4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent78524 C:\Users\lenovo\Desktop\Exp4\Exp4.xpr
+# Log file: C:/Users/lenovo/Desktop/Exp4/vivado.log
+# Journal file: C:/Users/lenovo/Desktop/Exp4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lenovo/Desktop/Exp4/Exp4.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/lenovo/Desktop/Exp4/code/cache/wave/sim_top_behav.wcfg
+source sim_top.tcl
+close_sim
